@@ -58,3 +58,25 @@ sysinfo.txt
 # Crashlytics generated file
 crashlytics-build.properties
 
+# Ignore folder meta files
+*.meta
+!*.*.meta
+
+Assets/csc.rsp
+Assets/csc.rsp.meta
+
+# Ignore addressables
+/[Aa]ssets/AddressableAssetsData/*
+/[Aa]ssets/AddressableAssetsData.*
+
+.idea/
+
+Assets/codeandweb.com/Editor/SettingsTexturePackerImporter.txt
+Assets/codeandweb.com/Editor/SettingsTexturePackerImporter.txt.meta
+
+Screenshots/*
+Recordings/*
+
+*.unitypackage.meta
+*.dll.mdb.meta
+
