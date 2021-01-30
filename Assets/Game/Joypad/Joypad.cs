@@ -2,16 +2,16 @@
 using UnityEngine.EventSystems;
 
 public class Joypad : MonoBehaviour {
-    public RectTransform joyPad;
-    public float touchHorizontalDeadzonePercentage = 0f;
-    public float touchVerticalDeadzonePercentage = 0f;
-    public float joypadOverallDeadzone = .1f;
-    public float sensitivity = .05f;
-    public bool normalizeInput = true;
-    public Animator joyPadAnimator;
-    public string animatorHorizontalParamName = "blendX";
-    public string animatorVerticalParamName = "blendY";
     public Vector2 input;
+    [SerializeField] private RectTransform joyPad;
+    [SerializeField] private float touchHorizontalDeadzonePercentage = 0f;
+    [SerializeField] private float touchVerticalDeadzonePercentage = 0f;
+    [SerializeField] private float joypadOverallDeadzone = .1f;
+    [SerializeField] private float sensitivity = .05f;
+    [SerializeField] private bool normalizeInput = true;
+    [SerializeField] private Animator joyPadAnimator;
+    [SerializeField] private string animatorHorizontalParamName = "blendX";
+    [SerializeField] private string animatorVerticalParamName = "blendY";
     private const int NON_POINTER = -2973642;
     private int _startPointerId;
     private Vector2 _startPoint;

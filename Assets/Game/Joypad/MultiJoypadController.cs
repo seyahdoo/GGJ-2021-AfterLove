@@ -4,27 +4,27 @@ using UnityEngine.EventSystems;
 
 namespace Mobge {
     public class MultiJoypadController : MonoBehaviour, IPointerDownHandler, IPointerUpHandler, IDragHandler {
-        public Joypad Player1Joypad;
-        public Joypad Player2Joypad;
+        public Joypad player1Joypad;
+        public Joypad player2Joypad;
         private void Awake() {
-            Player1Joypad.Init();
-            Player2Joypad.Init();
+            player1Joypad.Init();
+            player2Joypad.Init();
         }
         public void OnPointerDown(PointerEventData eventData) {
             if (eventData.position.y < Screen.height / 2f) {
-                Player1Joypad.OnPointerDown(eventData);
+                player1Joypad.OnPointerDown(eventData);
             }
             else {
-                Player2Joypad.OnPointerDown(eventData);
+                player2Joypad.OnPointerDown(eventData);
             }
         }
         void IDragHandler.OnDrag(PointerEventData eventData) {
-            Player1Joypad.OnDrag(eventData);
-            Player2Joypad.OnDrag(eventData);
+            player1Joypad.OnDrag(eventData);
+            player2Joypad.OnDrag(eventData);
         }
         public void OnPointerUp(PointerEventData eventData) {
-            Player1Joypad.OnPointerUp(eventData);
-            Player2Joypad.OnPointerUp(eventData);
+            player1Joypad.OnPointerUp(eventData);
+            player2Joypad.OnPointerUp(eventData);
         }
     }
 }
