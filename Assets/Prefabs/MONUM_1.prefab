@@ -11,6 +11,9 @@ GameObject:
   - component: {fileID: 4021357838724010682}
   - component: {fileID: 2558903647426991496}
   - component: {fileID: 3150262925452951853}
+  - component: {fileID: 8600605892973434660}
+  - component: {fileID: 12199337626168523}
+  - component: {fileID: 8816666592057370781}
   m_Layer: 0
   m_Name: MONUM-14
   m_TagString: Untagged
@@ -79,6 +82,58 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!65 &8600605892973434660
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2586226377591129625}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.16832113, y: 0.16832113, z: 0.16832113}
+  m_Center: {x: 0.00000023841858, y: 0, z: 0}
+--- !u!54 &12199337626168523
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2586226377591129625}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
+--- !u!145 &8816666592057370781
+SpringJoint:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2586226377591129625}
+  m_ConnectedBody: {fileID: 7113300246388316288}
+  m_Anchor: {x: 0, y: 0.08416057, z: 0}
+  m_AutoConfigureConnectedAnchor: 1
+  m_ConnectedAnchor: {x: -0.13726139, y: 0.938607, z: 0.1435554}
+  serializedVersion: 2
+  m_Spring: 3.4028233e+38
+  m_Damper: 0.2
+  m_MinDistance: 0
+  m_MaxDistance: 0
+  m_Tolerance: 0.025
+  m_BreakForce: Infinity
+  m_BreakTorque: Infinity
+  m_EnableCollision: 0
+  m_EnablePreprocessing: 1
+  m_MassScale: 1
+  m_ConnectedMassScale: 1
 --- !u!1 &2751127235408440646
 GameObject:
   m_ObjectHideFlags: 0
@@ -90,6 +145,9 @@ GameObject:
   - component: {fileID: 968414282615061867}
   - component: {fileID: 5189110992869416326}
   - component: {fileID: 2205199407885280952}
+  - component: {fileID: 2796462380196364133}
+  - component: {fileID: 1225182770035833463}
+  - component: {fileID: 7594377811676000762}
   m_Layer: 0
   m_Name: MONUM-1-1
   m_TagString: Untagged
@@ -158,6 +216,58 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!65 &2796462380196364133
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2751127235408440646}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.16832113, y: 0.17374712, z: 0.16832113}
+  m_Center: {x: -0.00000023841858, y: -0.000000026077032, z: 0}
+--- !u!54 &1225182770035833463
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2751127235408440646}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
+--- !u!145 &7594377811676000762
+SpringJoint:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2751127235408440646}
+  m_ConnectedBody: {fileID: 7113300246388316288}
+  m_Anchor: {x: 0, y: 0.08687353, z: 0}
+  m_AutoConfigureConnectedAnchor: 1
+  m_ConnectedAnchor: {x: -0.18932772, y: 0.77560973, z: -0.13011193}
+  serializedVersion: 2
+  m_Spring: 3.4028233e+38
+  m_Damper: 0.2
+  m_MinDistance: 0
+  m_MaxDistance: 0
+  m_Tolerance: 0.025
+  m_BreakForce: Infinity
+  m_BreakTorque: Infinity
+  m_EnableCollision: 0
+  m_EnablePreprocessing: 1
+  m_MassScale: 1
+  m_ConnectedMassScale: 1
 --- !u!1 &3912405660429306978
 GameObject:
   m_ObjectHideFlags: 0
@@ -169,6 +279,9 @@ GameObject:
   - component: {fileID: 7937229287792629151}
   - component: {fileID: 1388037248851111958}
   - component: {fileID: 5522132496045608447}
+  - component: {fileID: 1377046330686435842}
+  - component: {fileID: 3321576393097217127}
+  - component: {fileID: 31766090044761952}
   m_Layer: 0
   m_Name: MONUM1-3
   m_TagString: Untagged
@@ -237,6 +350,58 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!65 &1377046330686435842
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3912405660429306978}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.16832113, y: 0.28624701, z: 0.16832113}
+  m_Center: {x: -0.00000023841858, y: 0, z: 0}
+--- !u!54 &3321576393097217127
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3912405660429306978}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
+--- !u!145 &31766090044761952
+SpringJoint:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3912405660429306978}
+  m_ConnectedBody: {fileID: 7113300246388316288}
+  m_Anchor: {x: 0, y: 0.14312351, z: 0}
+  m_AutoConfigureConnectedAnchor: 1
+  m_ConnectedAnchor: {x: 0.1562047, y: 0.6145503, z: 0.08902359}
+  serializedVersion: 2
+  m_Spring: 3.4028233e+38
+  m_Damper: 0.2
+  m_MinDistance: 0
+  m_MaxDistance: 0
+  m_Tolerance: 0.025
+  m_BreakForce: Infinity
+  m_BreakTorque: Infinity
+  m_EnableCollision: 0
+  m_EnablePreprocessing: 1
+  m_MassScale: 1
+  m_ConnectedMassScale: 1
 --- !u!1 &4527725155309244225
 GameObject:
   m_ObjectHideFlags: 0
@@ -248,6 +413,9 @@ GameObject:
   - component: {fileID: 8431771805968330654}
   - component: {fileID: 1309005083721393746}
   - component: {fileID: 5205205350535684679}
+  - component: {fileID: 6603090991533991243}
+  - component: {fileID: 3360846529047221712}
+  - component: {fileID: 6668664935368683649}
   m_Layer: 0
   m_Name: MONUM-1-2
   m_TagString: Untagged
@@ -316,6 +484,58 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!65 &6603090991533991243
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4527725155309244225}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.16832066, y: 0.16832107, z: 0.16832113}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!54 &3360846529047221712
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4527725155309244225}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
+--- !u!145 &6668664935368683649
+SpringJoint:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4527725155309244225}
+  m_ConnectedBody: {fileID: 7113300246388316288}
+  m_Anchor: {x: 0, y: 0.08416054, z: 0}
+  m_AutoConfigureConnectedAnchor: 1
+  m_ConnectedAnchor: {x: 0, y: 0.4133207, z: -0.2303772}
+  serializedVersion: 2
+  m_Spring: 3.4028233e+38
+  m_Damper: 0.2
+  m_MinDistance: 0
+  m_MaxDistance: 0
+  m_Tolerance: 0.025
+  m_BreakForce: Infinity
+  m_BreakTorque: Infinity
+  m_EnableCollision: 0
+  m_EnablePreprocessing: 1
+  m_MassScale: 1
+  m_ConnectedMassScale: 1
 --- !u!1 &7391620573151614570
 GameObject:
   m_ObjectHideFlags: 0
@@ -327,6 +547,8 @@ GameObject:
   - component: {fileID: 3606414614814490744}
   - component: {fileID: 3314150489114873859}
   - component: {fileID: 6074231193213138623}
+  - component: {fileID: 7406821063084987671}
+  - component: {fileID: 7113300246388316288}
   m_Layer: 0
   m_Name: MONUM-1
   m_TagString: Untagged
@@ -395,6 +617,35 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!65 &7406821063084987671
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7391620573151614570}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.3327229, y: 0.39058256, z: 0.3326864}
+  m_Center: {x: -0.00001411885, y: -0.0000002682209, z: -0.00000016391277}
+--- !u!54 &7113300246388316288
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7391620573151614570}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 1
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1 &7703015678633968386
 GameObject:
   m_ObjectHideFlags: 0
