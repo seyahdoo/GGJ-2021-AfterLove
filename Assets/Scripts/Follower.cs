@@ -4,7 +4,10 @@ using UnityEngine;
 
 public class Follower : MonoBehaviour {
     public Transform followee;
+    public Transform secondFollowee;
+    public float lerp = 0f;
     private void Update() {
-        transform.position = Vector3.Lerp(transform.position, followee.position, .1f);
+        transform.position = Vector3.Lerp(transform.position,
+            Vector3.Lerp((secondFollowee.position + followee.position)/2f, followee.position, lerp), .1f);
     }
 }
