@@ -187,7 +187,7 @@ MeshFilter:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 95346783977428483}
-  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+  m_Mesh: {fileID: 2299947882200043282, guid: b15ad43a228b5a24bbfa15aaa10e5a7b, type: 3}
 --- !u!23 &95346783977428486
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -206,7 +206,10 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 31321ba15b8f8eb4c954353edc038b1d, type: 2}
+  - {fileID: 2100000, guid: a679b261e5b932047ae50bde307e1215, type: 2}
+  - {fileID: 2100000, guid: 5046e45d3226e474bbba7db8222667fe, type: 2}
+  - {fileID: 2100000, guid: cfd9c3f9e0dd6f24eaec8bb9cb1a4f20, type: 2}
+  - {fileID: 2100000, guid: c03915cbb630c894682ec5ef51b30e76, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -1329,7 +1332,7 @@ MeshFilter:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 9156128444359615339}
-  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+  m_Mesh: {fileID: 2299947882200043282, guid: b15ad43a228b5a24bbfa15aaa10e5a7b, type: 3}
 --- !u!23 &9156128444359615343
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -1348,7 +1351,10 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: b92e50ed7c7888a4c9a609d852e27ffa, type: 2}
+  - {fileID: 2100000, guid: 844a2b9fd067ca84ebc9919735cbfec0, type: 2}
+  - {fileID: 2100000, guid: d4ce1d6b44b7bfc4b909481e976a1ebc, type: 2}
+  - {fileID: 2100000, guid: cfd9c3f9e0dd6f24eaec8bb9cb1a4f20, type: 2}
+  - {fileID: 2100000, guid: c03915cbb630c894682ec5ef51b30e76, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -1432,7 +1438,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   magnetStrength: 4
-  effectiveRange: 3
+  effectiveRange: 1.5
 --- !u!1 &9156128444397166258
 GameObject:
   m_ObjectHideFlags: 0
@@ -1476,7 +1482,7 @@ MeshFilter:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 9156128444397166258}
-  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+  m_Mesh: {fileID: 2299947882200043282, guid: b15ad43a228b5a24bbfa15aaa10e5a7b, type: 3}
 --- !u!23 &9156128444397166262
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -1495,7 +1501,10 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: b92e50ed7c7888a4c9a609d852e27ffa, type: 2}
+  - {fileID: 2100000, guid: 4a79221540744e54aaf8e4cf0fd624dc, type: 2}
+  - {fileID: 2100000, guid: 5046e45d3226e474bbba7db8222667fe, type: 2}
+  - {fileID: 2100000, guid: cfd9c3f9e0dd6f24eaec8bb9cb1a4f20, type: 2}
+  - {fileID: 2100000, guid: c03915cbb630c894682ec5ef51b30e76, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -1576,7 +1585,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   magnetStrength: 4
-  effectiveRange: 3
+  effectiveRange: 1.5
 --- !u!1 &9156128444655665959
 GameObject:
   m_ObjectHideFlags: 0
