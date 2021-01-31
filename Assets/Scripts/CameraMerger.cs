@@ -19,7 +19,7 @@ public class CameraMerger : MonoBehaviour {
         var distance = Vector3.Distance(setups[0].player.position, setups[1].player.position);
         var a = Mathf.Clamp(distance, mergeEndDistance, mergeStartDistance);
         var lerpAmount = (a - mergeEndDistance) / (mergeStartDistance - mergeEndDistance);
-        for (int i = 0; i < setups.Length; i++) {
+        for (int i = 0; i < 2; i++) {
             var setup = setups[i];
             setup.cameraTransform.localPosition = Vector3.Lerp(setup.togetherView.localPosition, setup.separateView.localPosition, lerpAmount);
             setup.cameraTransform.localRotation = Quaternion.Lerp(setup.togetherView.localRotation, setup.separateView.localRotation, lerpAmount);
