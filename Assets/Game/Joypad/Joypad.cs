@@ -3,6 +3,8 @@ using UnityEngine.EventSystems;
 
 public class Joypad : MonoBehaviour {
     public Vector2 input;
+    public bool tapped = false;
+    public bool tapEnabled = true;
     [SerializeField] private RectTransform joyPad;
     [SerializeField] private float touchHorizontalDeadzonePercentage = 0f;
     [SerializeField] private float touchVerticalDeadzonePercentage = 0f;
@@ -18,6 +20,9 @@ public class Joypad : MonoBehaviour {
     public void Init() {
         _startPointerId = NON_POINTER;
         joyPad.gameObject.SetActive(false);
+        tapped = false;
+        tapEnabled = true;
+        input = Vector2.zero;
     }
     public void OnPointerDown(PointerEventData eventData) {
         if (_startPointerId == NON_POINTER) {
@@ -25,6 +30,7 @@ public class Joypad : MonoBehaviour {
             _startPointerId = eventData.pointerId;
             _startPoint = eventData.position;
             joyPad.position = _startPoint;
+            if (tapEnabled) tapped = true;
             UpdateJoypadGraphic(Vector2.zero);
         }
     }

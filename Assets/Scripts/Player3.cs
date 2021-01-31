@@ -32,7 +32,7 @@ public class Player3 : MonoBehaviour {
         var input1 = joypad1.input;
         var input2 = joypad2.input;
         if (
-            Input.GetKey(KeyCode.Space)||
+            // Input.GetKey(KeyCode.Space)||
             (input1.magnitude > separationDeadzone 
             && input2.magnitude > separationDeadzone 
             && Vector2.Angle(input1.normalized, input2.normalized) > separateDegrees))
@@ -42,11 +42,11 @@ public class Player3 : MonoBehaviour {
 
         if (_separationAmount > separationEndTime) {
             //separate
+            player1.transform.position = transform.position + (Vector3.forward * -1f);
+            player2.transform.position = transform.position + (Vector3.forward * 1f);
             playerComplexes[2].SetActive(false);
             playerComplexes[1].SetActive(true);
             playerComplexes[0].SetActive(true);
-            player1.transform.position = transform.position + (Vector3.forward * -1f);
-            player2.transform.position = transform.position + (Vector3.forward * 1f);
         }
         else {
             _separationAmount = Mathf.Clamp(_separationAmount, 0f, separationEndTime);
