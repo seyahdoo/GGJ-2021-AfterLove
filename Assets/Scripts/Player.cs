@@ -38,4 +38,7 @@ public class Player : MonoBehaviour {
             }
         }
     }
+    private void OnCollisionStay(Collision other) {
+        joypad.tapEnabled = true;
+    }
 }

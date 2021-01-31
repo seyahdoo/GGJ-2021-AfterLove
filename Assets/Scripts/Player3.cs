@@ -2,6 +2,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Random = UnityEngine.Random;
 
 public class Player3 : MonoBehaviour {
 
@@ -32,7 +33,7 @@ public class Player3 : MonoBehaviour {
         var input1 = joypad1.input;
         var input2 = joypad2.input;
         if (
-            // Input.GetKey(KeyCode.Space)||
+            Input.GetKey(KeyCode.Space)||
             (input1.magnitude > separationDeadzone 
             && input2.magnitude > separationDeadzone 
             && Vector2.Angle(input1.normalized, input2.normalized) > separateDegrees))
@@ -73,7 +74,25 @@ public class Player3 : MonoBehaviour {
         
         var directionForce = new Vector3(input.x, 0f, input.y);
         rb.AddForce(directionForce * force);
+        if (joypad1.tapped) {
+            joypad1.tapped = false;
+            joypad1.tapEnabled = false;
+            rb.AddForce(Vector3.up * 4f, ForceMode.Impulse);
+            rb.AddTorque(Random.insideUnitSphere * 2f, ForceMode.Impulse);
+        }
+        if (joypad2.tapped) {
+            joypad2.tapped = false;
+            joypad2.tapEnabled = false;
+            rb.AddForce(Vector3.up * 4f, ForceMode.Impulse);
+            rb.AddTorque(Random.insideUnitSphere * 2f, ForceMode.Impulse);
+        }
     }
-    
-    
+    private void OnCollisionEnter(Collision other) {
+        joypad1.tapEnabled = true;
+        joypad2.tapEnabled = true;
+    }
+    private void OnCollisionStay(Collision other) {
+        joypad1.tapEnabled = true;
+        joypad2.tapEnabled = true;
+    }
 }
