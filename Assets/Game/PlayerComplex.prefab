@@ -280,6 +280,7 @@ MonoBehaviour:
   - {fileID: 95346785087689362}
   player1: {fileID: 9156128444359615339}
   player2: {fileID: 9156128444397166258}
+  maxSpeed: 10
   force: 15
   separateDegrees: 135
   separationStartTime: 0.75
@@ -1050,7 +1051,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8105152734133336893}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 11.28, y: 1.2, z: 5.75}
+  m_LocalPosition: {x: 14.6, y: 1.2, z: 18.1}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 9156128444397166260}
@@ -1082,7 +1083,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8105152736267985678}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 5.09, y: 0.9, z: 5.12}
+  m_LocalPosition: {x: 80.9, y: 0.9, z: 82}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 9156128444655665957}
@@ -1394,12 +1395,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   joypad: {fileID: 7055946807302545780}
   rb: {fileID: 9156128444359615338}
-  force: 20
+  force: 8
   playerComplexes:
   - {fileID: 8105152736267985678}
   - {fileID: 8105152734133336893}
   - {fileID: 95346785087689362}
   player3: {fileID: 95346783977428480}
+  maxSpeed: 10
 --- !u!54 &9156128444359615338
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -1525,9 +1527,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   joypad: {fileID: 7055946808290950460}
   rb: {fileID: 9156128444397166257}
-  force: 20
+  force: 8
   playerComplexes: []
   player3: {fileID: 0}
+  maxSpeed: 10
 --- !u!54 &9156128444397166257
 Rigidbody:
   m_ObjectHideFlags: 0
