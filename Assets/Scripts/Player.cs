@@ -10,13 +10,16 @@ public class Player : MonoBehaviour {
     public float force;
     public GameObject[] playerComplexes;
     public Transform player3;
+    public float maxSpeed = 10f;
     private float _wontMergeUntil;
     private void OnEnable() {
         _wontMergeUntil = Time.time + .5f;
     }
     private void FixedUpdate() {
         var input = new Vector3(joypad.input.x, 0f, joypad.input.y);
-        rb.AddForce(input * force);
+        if (rb.velocity.magnitude < maxSpeed || Vector3.Angle(rb.velocity.normalized, input.normalized) > 135f) {
+            rb.AddForce(input * force);
+        }
         if (joypad.tapped) {
             joypad.tapped = false;
             joypad.tapEnabled = false;

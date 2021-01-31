@@ -15,6 +15,7 @@ public class Player3 : MonoBehaviour {
     public GameObject[] playerComplexes;
     public GameObject player1;
     public GameObject player2;
+    public float maxSpeed = 10f;
     public float force;
     public float separateDegrees = 135f;
     public float separationStartTime = 1f;
@@ -69,11 +70,10 @@ public class Player3 : MonoBehaviour {
         var input1 = joypad1.input;
         var input2 = joypad2.input;
         var input = input1 + input2;
-        
-        
-        
         var directionForce = new Vector3(input.x, 0f, input.y);
-        rb.AddForce(directionForce * force);
+        if (rb.velocity.magnitude < maxSpeed || Vector3.Angle(rb.velocity.normalized, directionForce.normalized) > 135f) {
+            rb.AddForce(directionForce * force);
+        }
         if (joypad1.tapped) {
             joypad1.tapped = false;
             joypad1.tapEnabled = false;
