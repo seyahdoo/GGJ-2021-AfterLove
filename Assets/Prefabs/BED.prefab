@@ -1622,6 +1622,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   directionForce: {x: 0, y: 10, z: -2}
+  animator: {fileID: 1296258302931348200}
 --- !u!54 &6774080915973057561
 Rigidbody:
   m_ObjectHideFlags: 0
