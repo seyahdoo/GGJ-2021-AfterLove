@@ -1529,6 +1529,7 @@ GameObject:
   - component: {fileID: 2600793492065619585}
   - component: {fileID: 6774080915973057561}
   - component: {fileID: 1296258302931348200}
+  - component: {fileID: 8593737403081157168}
   m_Layer: 0
   m_Name: Icosphere.001
   m_TagString: Untagged
@@ -1621,7 +1622,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: de76ff444a5ff49418271d38d729ad5a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  directionForce: {x: 0, y: 10, z: -2}
+  directionForce: {x: 0, y: 15, z: -2}
   animator: {fileID: 1296258302931348200}
 --- !u!54 &6774080915973057561
 Rigidbody:
@@ -1658,6 +1659,20 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &8593737403081157168
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5240991411799338388}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 72d5a2a5503f57449b68c98284e849d1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  magnetStrength: 10
+  effectiveRange: 1.5
 --- !u!1 &5642563275903556486
 GameObject:
   m_ObjectHideFlags: 0
