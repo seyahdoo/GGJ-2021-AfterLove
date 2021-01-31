@@ -1409,6 +1409,7 @@ MonoBehaviour:
   - {fileID: 95346785087689362}
   player3: {fileID: 95346783977428480}
   maxSpeed: 10
+  magnet: {fileID: 5545931024439676164}
 --- !u!54 &9156128444359615338
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -1439,6 +1440,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   magnetStrength: 4
   effectiveRange: 1.5
+  disableMagnetUntil: 0
 --- !u!1 &9156128444397166258
 GameObject:
   m_ObjectHideFlags: 0
@@ -1556,6 +1558,7 @@ MonoBehaviour:
   playerComplexes: []
   player3: {fileID: 0}
   maxSpeed: 10
+  magnet: {fileID: 3189026189650177667}
 --- !u!54 &9156128444397166257
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -1586,6 +1589,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   magnetStrength: 4
   effectiveRange: 1.5
+  disableMagnetUntil: 0
 --- !u!1 &9156128444655665959
 GameObject:
   m_ObjectHideFlags: 0

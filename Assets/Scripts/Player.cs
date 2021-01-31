@@ -11,9 +11,11 @@ public class Player : MonoBehaviour {
     public GameObject[] playerComplexes;
     public Transform player3;
     public float maxSpeed = 10f;
+    public Magnet magnet;
     private float _wontMergeUntil;
     private void OnEnable() {
         _wontMergeUntil = Time.time + .5f;
+        magnet.disableMagnetUntil = Time.time + 1f;
     }
     private void FixedUpdate() {
         var input = new Vector3(joypad.input.x, 0f, joypad.input.y);
@@ -23,8 +25,9 @@ public class Player : MonoBehaviour {
         if (joypad.tapped) {
             joypad.tapped = false;
             joypad.tapEnabled = false;
+            magnet.disableMagnetUntil = Time.time + .2f;
             rb.AddForce(Vector3.up * 4f, ForceMode.Impulse);
-            rb.AddTorque(Random.insideUnitSphere * 2f, ForceMode.Impulse);
+            rb.AddTorque(Random.insideUnitSphere * 1f, ForceMode.Impulse);
         }
     }
     private void OnCollisionEnter(Collision other) {

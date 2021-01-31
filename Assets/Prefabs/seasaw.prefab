@@ -169,8 +169,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 72d5a2a5503f57449b68c98284e849d1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  magnetStrength: 10
-  effectiveRange: 1
+  magnetStrength: 2
+  effectiveRange: 0.5
+  disableMagnetUntil: 0
 --- !u!1 &5452247984219520120
 GameObject:
   m_ObjectHideFlags: 0
@@ -330,6 +331,7 @@ GameObject:
   m_Component:
   - component: {fileID: 767338332888137985}
   - component: {fileID: 7566105283977304621}
+  - component: {fileID: 1734539672963615365}
   m_Layer: 0
   m_Name: GameObject (1)
   m_TagString: Untagged
@@ -364,6 +366,21 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1.1721494, y: 0.14831376, z: 1.1948006}
   m_Center: {x: 0.009060472, y: -0.018121123, z: 0.006795287}
+--- !u!114 &1734539672963615365
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5870818723636207160}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 72d5a2a5503f57449b68c98284e849d1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  magnetStrength: 2
+  effectiveRange: 0.5
+  disableMagnetUntil: 0
 --- !u!1 &6258746026307360234
 GameObject:
   m_ObjectHideFlags: 0
