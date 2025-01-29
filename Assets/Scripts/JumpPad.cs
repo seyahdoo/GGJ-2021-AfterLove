@@ -7,7 +7,9 @@ public class JumpPad : MonoBehaviour {
         var worldDirection = transform.TransformDirection(directionForce);
         if (other.rigidbody != null) {
             other.rigidbody.velocity = worldDirection;
-            animator.SetTrigger(Activate);
+            if (animator != null) {
+                animator.SetTrigger(Activate);
+            }
         }
     }
 }
