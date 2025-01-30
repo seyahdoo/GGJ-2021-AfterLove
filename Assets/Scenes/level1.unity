@@ -14,15 +14,15 @@ OcclusionCullingSettings:
 RenderSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 9
-  m_Fog: 1
+  m_Fog: 0
   m_FogColor: {r: 0.5981666, g: 0.8760423, b: 0.8867924, a: 1}
   m_FogMode: 3
   m_FogDensity: 0.015
   m_LinearFogStart: 0
   m_LinearFogEnd: 300
-  m_AmbientSkyColor: {r: 0.4262638, g: 0.8773585, b: 0.64812005, a: 1}
+  m_AmbientSkyColor: {r: 0.48964852, g: 1.0078202, b: 0.74449444, a: 1}
   m_AmbientEquatorColor: {r: 0.16967781, g: 0.59428614, b: 0.8773585, a: 1}
-  m_AmbientGroundColor: {r: 0.5943396, g: 0.45509967, b: 0.17661978, a: 1}
+  m_AmbientGroundColor: {r: 1.0348054, g: 0.79237455, b: 0.3075129, a: 1}
   m_AmbientIntensity: 1
   m_AmbientMode: 1
   m_SubtractiveShadowColor: {r: 0.42, g: 0.478, b: 0.627, a: 1}
@@ -7324,10 +7324,10 @@ Light:
   m_InnerSpotAngle: 21.80208
   m_CookieSize: 10
   m_Shadows:
-    m_Type: 2
+    m_Type: 1
     m_Resolution: -1
     m_CustomResolution: -1
-    m_Strength: 0.6
+    m_Strength: 0.8
     m_Bias: 0.05
     m_NormalBias: 0.4
     m_NearPlane: 0.1
@@ -9949,7 +9949,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!108 &1644049381
 Light:
   m_ObjectHideFlags: 0
