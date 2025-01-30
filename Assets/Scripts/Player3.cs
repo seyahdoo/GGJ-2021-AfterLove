@@ -21,7 +21,7 @@ public class Player3 : MonoBehaviour {
     public float separationStartTime = 1f;
     public float separationEndTime = 2f;
     public float separationDeadzone = .5f;
-    private bool _separationStarted = false;
+    //private bool _separationStarted = false;
     private float _separationAmount = 0f;
     
     private void OnEnable() {
